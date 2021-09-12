@@ -63,7 +63,7 @@ pipeline{
         sh label: '', script: '''rm -rf mydockerfile
 mkdir mydockerfile
 cd mydockerfile
-cp /var/lib/jenkins/workspace/package/target/addressbook.war .
+cp /var/lib/jenkins/workspace/pipelineslave/target/addressbook.war .
 touch dockerfile
 cat <<EOT>> dockerfile
 From tomcat
